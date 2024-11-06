@@ -80,7 +80,7 @@ export default function Principal({ data, forecast, onTemperatura }) {
         </div>
       </div>
       <div className='md:mt-20 mt-10 mb-4 md:mb-0'>
-        <label className="text-white text-2xl ml-20 md:ml-[138px]">Today's Highlights</label>
+        <label className="text-white text-2xl ml-20 md:ml-[138px]">Today&apos;s Highlights</label>
       </div>
       <div className="bg-[#100e1c] md:w-[88%] grid grid-cols-1 md:grid-cols-2 gap-3 md:ml-14 w-full h-full md:h-[50%] text-white overflow-auto md:overflow-hidden">
         <div className="bg-[#1e203a] h-[150px] ml-20 w-[62%] md:w-[80%] md:h-[85%] md:mt-5 mr-5 md:mr-0 flex justify-center">
