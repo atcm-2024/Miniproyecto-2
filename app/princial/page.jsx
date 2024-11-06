@@ -1,6 +1,6 @@
 import React, { useState , useContext} from 'react';
 import { GradosContext} from "@/app/contexts/UseProvider";
-
+import Image from 'next/image';
 
 export default function Principal({ data, forecast, onTemperatura }) {
   const [unidadTemp, setUnidadTemp] = useState('C');
@@ -64,7 +64,7 @@ export default function Principal({ data, forecast, onTemperatura }) {
               forecast.map((day, index) => (
                 <div key={index} className="bg-[#1e203a] ml-20 md:ml-10 mb-3 h-[150px] w-[120px] md:w-[80%] md:h-[180px] flex flex-col justify-center items-center">
                   <label className="mb-5">{day.date}</label>
-                  <img src={`/images/weather/${day.weather?.icon}.png`} className="w-16 h-12 mb-2 mt-2" alt="" />
+                  <Image src={`/images/weather/${day.weather?.icon}.png`} width={1200} height={500}className="w-16 h-12 mb-2 mt-2" alt="" />
                   <label className="mt-2">
                     {unidadTemp === 'C'
                       ? `${day.temperature}°C`
@@ -94,7 +94,7 @@ export default function Principal({ data, forecast, onTemperatura }) {
 
             <div className="w-full h-[30%] flex flex-row justify-center items-center ">
                 <button className='bg-slate-500 w-8 h-8 rounded-full flex items-center justify-center'>
-                  < img src={`/images/navigation.svg`} className={`w-7 h-5 `} style={{ transform:`rotate(${data?.wind?.deg}deg)` }}  alt="" /></button> 
+                  < Image src={`/images/navigation.svg`} width={1200} height={500} className={`w-7 h-5 `} style={{ transform:`rotate(${data?.wind?.deg}deg)` }}  alt="" /></button> 
                   <span>&nbsp;&nbsp;{titDegree }</span>
             </div>
               

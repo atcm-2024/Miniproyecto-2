@@ -46,11 +46,11 @@ if (gradost==='C')
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <img src="/images/Fondo.png" alt="" className="w-[90%] md:w-[98%] h-[80%] pb-10 object-cover overflow-hidden" />
+          <Image src="/images/Fondo.png" alt="" width={1200} height={500} className="w-[90%] md:w-[98%] h-[80%] pb-10 object-cover overflow-hidden" />
           {data && data.weather && data.weather[0] ? (
-            <img 
+            <Image 
               src={`/images/weather/${data.weather[0].icon}.png`}  
-              alt="" 
+              alt="" width={1200} height={500}
               className="absolute w-[32%] md:w-[40%] h-[28%] mt-20 md:mt-5 object-contain" 
             />
           ) : null}
