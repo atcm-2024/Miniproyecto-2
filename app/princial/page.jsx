@@ -1,3 +1,4 @@
+'use client'
 import React, { useState , useContext} from 'react';
 import { GradosContext} from "@/app/contexts/UseProvider";
 import Image from 'next/image';
