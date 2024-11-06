@@ -1,0 +1,56 @@
+/*{data && data.weather && data.weather[0] ? (
+            <img 
+              src={/images/weather/${data.weather[0].icon}.png}  
+              alt="" 
+              className="absolute w-[32%] md:w-[50%] h-[24%] mt-28 md:mt-20 object-contain" 
+            />
+          ) : null}
+
+*/
+
+
+/*
+{showModal && (
+                <div className="fixed inset-y-0 left-0 bg-[#1E213A] flex flex-col p-5 text-center z-50 w-full md:w-[30%] h-auto">
+                    <button
+                        aria-label="Close Modal"
+                        className="self-end bg-none p-2 rounded-full mb-4"
+                        onClick={() => setShowModal(false)}
+                    >
+                       X
+                    </button>
+                    <input
+                        type="text"
+                        placeholder="Search City"
+                        value={searchQuery}
+                        onChange={handleSearch}
+                        className="bg-[#1E213A] border-white border-2 p-3 mb-4 text-white w-full"
+                    />
+                    <div className="overflow-y-auto max-h-[400px]">
+                        {filteredCities.slice(0, 3).map((city) => (
+                            <div
+                                key={city.id}
+                                onClick={() => selectCity(city.name)}
+                                className="p-3 bg-none m-2 rounded-lg cursor-pointer hover:bg-[#131525] "
+                            >
+                                {city.name}, {city.country}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}*/
+
+
+/*const handleSearch = (event) => {
+    const query = event.target.value.toLowerCase();
+    setSearchQuery(query);
+    setFilteredCities(
+        cities.filter((city) => city.name.toLowerCase().includes(query))
+       );
+    };
+*/
+
+/*const [searchQuery, setSearchQuery] = useState('');*/
+
+
+
