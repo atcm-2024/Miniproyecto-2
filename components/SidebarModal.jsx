@@ -1,3 +1,4 @@
+'use client'
 import { CityContext } from "@/app/contexts/UseProvider";
 import citiesData from "@/app/cities.json";
 import React, { useContext, useState, useEffect } from "react";
